@@ -17,6 +17,7 @@ $(function() {
         draggable: true,
         infinite: false,
         mobileFirst: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: breakpoints.md,

@@ -19,10 +19,12 @@ export default {
       purple:'#B7BDFF',
       blue:'#4A59FF',
       darkblue:'#020746',
-      darkgray:'#212121'
+      darkgray:'#212121',
     },
     extend: {
-
+      backgroundImage:{
+        'blue-gradient':'linear-gradient(210deg, #00075A, #020F2B, #00075A, #4A59FF)'
+      }
     },
   },
   plugins: [],
