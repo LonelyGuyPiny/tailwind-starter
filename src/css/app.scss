@@ -11,26 +11,57 @@
 // and import it this way
 // @import './src/elements/filename.scss';
 
-.container-max {
-  max-width: 1920px;
-  margin-right: auto;
-  margin-left: auto;
+.ht-container {
+  @apply max-w-[1920px] mx-auto px-4 md:px-6;
+  
+}
+.ht-container-box {
+  @apply max-w-[1300px] mx-auto px-4 md:px-6;
 }
 
-.container-md {
-  max-width: 1320px;
-  margin-right: auto;
-  margin-left: auto;
+/* Typography */
+.heading-100 {
+  @apply text-4xl md:text-5xl xl:text-6xl;
+}
+.heading-200 {
+}
+.heading-300 {
+}
+.heading-400 {
+}
+.heading-500 {
 }
 
-.container-md {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+.subheading-100 {
+  @apply md:text-lg lg:text-xl;
 }
-.unselectable {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  pointer-events: none;
+.subheading-200 {
+}
+
+.subheading-300 {
+}
+.subheading-400 {
+}
+.subheading-500 {
+}
+
+.paragraph-50 {
+}
+.paragraph-100 {
+}
+.paragraph-200 {
+}
+.paragraph-300 {
+  @apply text-base;
+}
+.paragraph-400 {
+}
+.paragraph-500 {
+}
+
+/* Buttons */
+
+
+.outlined-btn {
+	@apply hover:bg-white hover:text-black  text-xs justify-center text-center border rounded-full px-14 py-2 transition-all ease-in-out duration-300;
 }
