@@ -1,0 +1,20 @@
+/* Headings h1-h6 and page titles */
+.heading-100{@apply text-xs md:text-base lg:text-5xl}
+.heading-200{@apply text-lg md:text-3xl lg:text-4xl}             
+.heading-300{}
+.heading-400{}
+.heading-500{}     
+
+/* Subheadings */
+.subheading-100{@apply text-3xl} 
+.subheading-200{@apply text-xl md:text-2xl}        
+.subheading-300{}
+.subheading-400{}
+.subheading-500{}          
+
+/* Paragraphs */
+.paragraph-100{@apply text-sm lg:text-xl}
+.paragraph-200{@apply text-lg}
+.paragraph-300{@apply text-xs md:text-base}
+.paragraph-400{@apply text-sm}
+.paragraph-500{@apply text-xs}

@@ -1,0 +1,27 @@
+// if you want to use fonts from url
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+	font-family: "SoleilRegular";
+	src: url(../fonts/SoleilRegular.woff2) format("woff2");
+}
+@font-face {
+	font-family: "SoleilBook";
+	src: url(../fonts/SoleilBook.woff2) format("woff2");
+}
+@font-face {
+	font-family: "SoleilBold";
+	src: url(../fonts/SoleilBold.woff2) format("woff2");
+}
+@font-face {
+	font-family: "SoleilLight";
+	src: url(../fonts/SoleilLight.woff2) format("woff2");
+}
+// if you want to use fonts from file
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url(~@fonts/gotham-black-webfont.woff2) format('woff2'),
+//          url(~@fonts/gotham-black-webfont.woff) format('woff');
+//     font-weight: 900;
+//     font-style: normal;
+// }

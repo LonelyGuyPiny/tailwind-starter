@@ -1,48 +1,40 @@
-@font-face {
-    font-family: 'SoleilRegular';
-    src: url(../fonts/SoleilRegular.woff2) format('woff2');
-}
-@font-face {
-    font-family: 'SoleilBook';
-    src: url(../fonts/SoleilBook.woff2) format('woff2');
-}
-@font-face {
-    font-family: 'SoleilBold';
-    src: url(../fonts/SoleilBold.woff2) format('woff2');
-}
-@font-face {
-    font-family: 'SoleilLight';
-    src: url(../fonts/SoleilLight.woff2) format('woff2');
-}
-@import 'tailwindcss/base.css';
-@import 'tailwindcss/components.css';
-@import 'tailwindcss/utilities.css';
+
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
+@import "./src/css/fonts.scss"; // import fonts
+@import "./src/css/typography.scss"; // import typography rules
+@import "./src/css/core.scss"; // import theme core css
+
+// if you badly need to write scss for an element/section, put it inside elements folder
+// and import it this way
+// @import './src/elements/filename.scss';
 
 $slick-font-path: "~slick-carousel/slick/fonts/";
 $slick-loader-path: "~slick-carousel/slick/";
-@import 'slick-carousel/slick/slick', 'slick-carousel/slick/slick-theme';
+@import "slick-carousel/slick/slick", "slick-carousel/slick/slick-theme";
 
-
-.container-max{
-    max-width:1920px;
-    margin-right:auto;
-    margin-left:auto;
+.container-max {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.container-md{
-    max-width:1320px;
-    margin-right:auto;
-    margin-left:auto;
+.container-md {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.container-md{
-    max-width:1200px;
-    margin-right:auto;
-    margin-left:auto;
+.container-md {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.unselectable{
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    pointer-events: none;
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
