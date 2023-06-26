@@ -102,3 +102,57 @@ iframe {
 .woocommerce-notices-wrapper ul {
 	@apply ml-0 list-none;
 }
+
+.heading-100 {
+	@apply text-xl lg:text-5xl;
+}
+.heading-200 {
+	@apply text-lg md:text-3xl lg:text-4xl;
+}
+.heading-300 {
+	@apply text-base;
+}
+/* 
+.heading-400{}
+.heading-500{} 
+*/
+
+.subheading-100 {
+	@apply text-3xl;
+}
+.subheading-200 {
+	@apply text-xl md:text-2xl;
+}
+/* 
+.subheading-300{}
+.subheading-400{}
+.subheading-500{} 
+*/
+
+.paragraph-100 {
+	@apply text-sm lg:text-xl;
+}
+.paragraph-200 {
+	@apply text-lg;
+}
+.paragraph-300 {
+	@apply text-xs md:text-base;
+}
+.paragraph-400 {
+	@apply text-sm;
+}
+.paragraph-500 {
+	@apply text-xs;
+}
+
+/* Buttons */
+
+.outlined-btn {
+	@apply border-white border-2 py-4 px-5 paragraph-300 text-white  hover:bg-black hover:bg-opacity-10 hover:border-blue transition-all ease-in-out duration-300;
+}
+.full-btn {
+	@apply bg-darkgray border-darkgray border-2 paragraph-300 text-darkgray px-4 py-6 w-full hover:bg-blue hover:border-blue transition-all ease-in-out duration-300;
+}
+.solid-btn {
+	@apply bg-purple border-2 border-purple paragraph-300 text-white py-4 px-5 hover:bg-blue hover:text-black hover:border-blue transition-all ease-in-out duration-300;
+}
