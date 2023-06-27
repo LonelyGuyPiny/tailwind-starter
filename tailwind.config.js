@@ -14,16 +14,17 @@ export default {
 			purple: "#B7BDFF",
 			blue: "#4A59FF",
 			darkblue: "#020746",
-			darkgray: "#212121"
+			darkgray: "#212121",
+			green: "#38BDAE"
 		},
 		extend: {
 			screens: {
-				xs: "450px",
-				sm: "640px",
-				md: "768px",
-				lg: "1024px",
-				xl: "1280px",
-				"2xl": "1536px"
+				xs: "640px",
+				sm: "768px",
+				md: "1024px",
+				lg: "1280px",
+				xl: "1536px",
+				xxl: "2560px"
 			},
 			fontSize: {
 				tiny: [".938rem", "1rem"],

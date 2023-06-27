@@ -4,44 +4,670 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTProject</title>
+    <title>Tailwind CSS Test</title>
     <meta name="description" content="">
     <script type="module" src="/main.js"></script>
+
+    <style type="text/css">
+        @font-face {
+            font-family: "Jost";
+            src: url(src/fonts/Jost-VariableFont_wght.ttf) format("truetype");
+        }
+    </style>
 </head>
 
 <body class="antialiased">
     <main>
         <!-- element stracture -->
-        <section class="py-10 bg-black">
-            <div class="ht-container bg-red-200">
+        <section class="">
+            <div class="bg-red-200">
                 <!-- Start element -->
-                <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                    <div class="mr-auto place-self-center lg:col-span-7">
-                        <h1 class="max-w-2xl mb-4 font-extrabold heading-100 text-white">
-                            Payments tool for software companies</h1>
-                        <p class="max-w-2xl text-white mb-6 font-light text-gray-500 lg:mb-8 subheading-100">
-                            From checkout to global sales tax compliance, companies around the world use Flowbite to
-                            simplify their payment stack.
-                        </p>
-                        <p class="text-white paragraph-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sint repellat
-                            nobis non et maxime
-                            debitis perspiciatis id quia aspernatur vero sit, tempora obcaecati, laborum, ut eligendi!
-                            Veniam culpa tempore vitae?</p>
-                        <div class="flex gap-6 flex-wrap md:flex-nowrap ">
-                            <a href="#" class="outlined-btn w-full sm:w-auto">
-                                Get started
+                <div class="">
 
-                            </a>
-                            <a href="#" class="outlined-btn  w-full sm:w-auto">
-                                Speak to Sales
-                            </a>
+                    <!-- Nav Bar -->
+                    <div class="py-2 px-2 xl:px-5 flex justify-between mw-1920 mx-auto">
+                        <div>
+                            <img class="w-fit" src="src/images/MCI-logo.png" alt="MCI-logo">
+                        </div>
+                        <div>
+                            <img class="w-fit py-4" src="src/images/Search Bar Component V2.png"
+                                alt="Search Bar Component">
                         </div>
                     </div>
-                    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-                            alt="mockup" class="object-contain">
+
+                    <!-- Hero Section -->
+                    <div style="background-color: #38BDAE;">
+                        <div class="grid grid-cols-12 gap-8 px-0 md:px-6 xl:px-12 xxl:px-40 py-10 mw-1920 mx-auto">
+                            <div class="col-span-12 lg:col-span-4 pr-0 lg:pr-10 xl:pr-15 xxl:pr-40">
+                                <p class="text-white font-normal text-7xl leading-snug">
+                                    <b>Welcome</b> to the <b>MCI Cookbook!</b>
+                                </p>
+                            </div>
+                            <div class="col-span-12 lg:col-span-8">
+                                <p class="text-white text-4xl mb-20  leading-snug">
+                                    <b>We are excited to have you join our team.</b> Just like a chef in the kitchen,
+                                    your success at MCI will be a combination of the right ingredients and a little bit
+                                    of hard work and dedication. In this manual, you will find all the <b>"recipes for
+                                        success"</b> you need to cook up a satisfying career.
+                                </p>
+                                <p class="text-white text-4xl italic mb-60">
+                                    <b>So grab your apron, and let's get cooking!</b>
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
+
+                    <!-- Banner -->
+                    <div
+                        class="mx-auto px-0 md:px-6 xl:px-12 xxl:px-60 w-full flex justify-end sm:justify-between items-baseline -translate-y-1/2 mw-1920 ">
+                        <img src="src/images/hero banner vectors 1.png" alt="Banner 1"
+                            class="hidden sm:block relative left-0 sm:-left-32 md:left-0">
+                        <img src="src/images/text-rotation.svg" alt="Text Rotation" class="text-rotation place-self-center">
+                        <img src="src/images/hero banner vectors 2.png" alt="Banner 2" class="hidden lg:block">
+                        <!--img class="w-0 absolute md:object-cover md:w-full md:object-left xl:object-contain" src="src/images/Group 146.png"
+                            alt="Landing Image" style="height: 400px;"-->
+                    </div>
+
+                    <!-- Main -->
+                    <div class="bg-white mb-20 relative -top-20">
+                        <div class="p-5 mx-auto card-container">
+                            <div
+                                class="grid  gap-10 justify-items-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 grid-flow-row">
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            01
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">General<br>Employment<br>Policies
+                                                </div>
+                                                <img src="src/images/svgs/1.svg" alt="Illustration Image"
+                                                    class="card-body-icon-1 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Corn on the Cob Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#38BDAE]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            02
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex  justify-between items-center">
+                                                <div class="card-body-content">Holidays
+                                                </div>
+                                                <img src="src/images/svgs/2.svg" alt="Illustration Image"
+                                                    class="card-body-icon-2">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Empanadas Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#F58773]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            03
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Pregnancy
+                                                </div>
+                                                <img src="src/images/svgs/3.svg" alt="Illustration Image"
+                                                    class="card-body-icon-3 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Crispy Fries Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            04
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Special
+                                                    <br>Leave
+                                                </div>
+                                                <img src="src/images/svgs/4.svg" alt="Illustration Image"
+                                                    class="card-body-icon-4 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Kaassoufle Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#38BDAE]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            05
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Sickness
+                                                    <br>& Incapacity<br>for Work
+                                                </div>
+                                                <img src="src/images/svgs/5.svg" alt="Illustration Image"
+                                                    class="card-body-icon-5 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Borscht Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#F58773]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            06
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Insurances
+                                                    <br>& Pension<br>Scheme
+                                                </div>
+                                                <img src="src/images/svgs/6.svg" alt="Illustration Image"
+                                                    class="card-body-icon-6 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Meatballs Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            07
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Expenses
+                                                    <br>& Business<br>Travel
+                                                </div>
+                                                <img src="src/images/svgs/7.svg" alt="Illustration Image"
+                                                    class="card-body-icon-7 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Moussaka Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#38BDAE]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            08
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Growth &
+                                                    <br>Development
+                                                </div>
+                                                <img src="src/images/svgs/8.svg" alt="Illustration Image"
+                                                    class="card-body-icon-8 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Mocha Coffee Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#F58773]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            09
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Intellectual
+                                                    <br>Property
+                                                </div>
+                                                <img src="src/images/svgs/9.svg" alt="Illustration Image"
+                                                    class="card-body-icon-9 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Pickled Fish on Toast Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            10
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Safety
+                                                </div>
+                                                <img src="src/images/svgs/10.svg" alt="Illustration Image"
+                                                    class="card-body-icon-10 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Schnitzel Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#38BDAE]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            11
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Health,
+                                                    <br>Wellbeing<br>& Trust
+                                                </div>
+                                                <img src="src/images/svgs/11.svg" alt="Illustration Image"
+                                                    class="card-body-icon-11 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Rainbow Crepes Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#F58773]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            12
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Termination of
+                                                    <br>Employment
+                                                </div>
+                                                <img src="src/images/svgs/12.svg" alt="Illustration Image"
+                                                    class="card-body-icon-12 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Macaroon Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            13
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Social
+                                                    <br>Media
+                                                </div>
+                                                <img src="src/images/svgs/13.svg" alt="Illustration Image"
+                                                    class="card-body-icon-13 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Ginger Cookies Edition </p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#38BDAE]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            14
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Computer
+                                                    <br>Tools<br>& Rights
+                                                </div>
+                                                <img src="src/images/svgs/14.svg" alt="Illustration Image"
+                                                    class="card-body-icon-14 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Samosa Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#F58773]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            15
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Company
+                                                    <br>Rules<br>Policies
+                                                </div>
+                                                <img src="src/images/svgs/15.svg" alt="Illustration Image"
+                                                    class="card-body-icon-15 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Paella Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pt-4 bg-[#EF3E59]">
+                                    <div class="flex flex-col justify-center">
+                                        <div class="card-header py-5">
+                                            16
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="card-body-content">Sustainability
+                                                    <br>& Ethnics
+                                                </div>
+                                                <img src="src/images/svgs/16.svg" alt="Illustration Image"
+                                                    class="card-body-icon-16 ">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-white border-solid">
+                                        <div class="card-body-footer py-4">
+                                            <p>Chickpea Pasta Edition</p>
+                                            <button
+                                                class="w-full h-full border border-white border-solid py-4 flex justify-center items-center gap-2">Read
+                                                the Recipe <img src="src/images/arrow.svg" alt="Arrow" class="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Back to Top -->
+                    <div class="">
+                        <a class="w-full" href="#">
+                            <img class="block mx-auto" src="src/images/Component 4.svg" alt="Back to Top">
+                            <p class="block text-lg text-center">Back to Top</p>
+                        </a>
+                    </div>
+
+
+                    <!-- Footer -->
+                    <div class="footer mx-auto mw-1920">
+                        <div class="border-b-[2px]" style="color: #F58773;">
+                            <div class="px-5 xl:px-32 xxl:px-5 py-5 flex justify-between">
+                                <div>
+                                    <p class="text-lg font-bold mb-0">Recipes for Success</p>
+                                </div>
+                                <div class="">
+                                    <img class="h-10" src="src/images/MCI FLOWER.svg" alt="HT Logos">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-5 xl:px-32 xxl:px-5 py-5">
+                            <div class="grid grid-cols-12 gap-8">
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">01</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">General Employment Policies</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #38BDAE;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">02</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Holidays</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #F58773;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">03</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Pregnancy</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">04</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Special Leave</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #38BDAE;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">05</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Sickness & Incapacity for Work</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #F58773;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">06</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Insurances &Pension Scheme</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">07</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Expenses & Business Travel</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #38BDAE;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">08</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Growth & Development</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #F58773;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">09</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Intellectual Property</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">10</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Safety</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #38BDAE;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">11</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Health, Wellbeing & Trust</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #F58773;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">12</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Termination of Employment</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">13</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Social Media</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #38BDAE;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">14</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Computer Tools & Rights</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #F58773;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">15</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Company Rules</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 xs:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+                                    <div style="color: #EF3E59;">
+                                        <p class="text-lg underline underline-offset-8 font-semibold leading-5">16</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-base">Sustainability & Ethics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="color: #EF3E59;">
+                            <div class="">
+                                <div class="px-5 xl:px-32 xxl:px-5 py-5">
+                                    <p class="text-lg font-bold mb-0">Amendments</p>
+                                </div>
+                            </div>
+                            <div class="border-t-[2px]">
+                                <div class="px-5 xl:px-32 xxl:px-5 py-5">
+                                    <p class="inline-block text-base">This staff manual contains employment conditions,
+                                        which, in a developing business, will sometimes require changes. MCI therefore
+                                        reserves the right to unilaterally revise, delete and add to the provisions of
+                                        this Staff manual at any time without further notice. All such revisions,
+                                        deletions or additions to the Staff manual must be in writing; no oral
+                                        statements or representations can change the provisions of the Staff manual.
+                                        With due observance of Article 7:613 of the Dutch Civil Code, MCI may modify one
+                                        or more provisions, if and insofar MCI has a considerable interest
+                                        (‘’zwaarwichtig belang’’).</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t-[2px]" style="color: #38BDAE;">
+                            <div class="px-5 xl:px-32 xxl:px-5 py-5 flex justify-between">
+                                <div>
+                                    <p class="text-base">Copyrights &copy; 2023 MCI. All rights reserved.</p>
+                                </div>
+                                <div class="">
+                                    <p class="inline-block text-base">Designed & Developed by </p>
+                                    <img class="inline-block h-6" src="src/images/HT Logos.svg" alt="HT Logos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
